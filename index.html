@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel = "stylesheet" href = "./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class = "container">
+
+      <div id = "hero">
+        <img src = "./images/illustration-hero.svg" width = "340" alt = "Cartoon image of a woman dancing, wearing wired headphones plugged into her phone.">
+      </div>
+      <h1>Order Summary</h1>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!</p>
+
+      <div class = "ordersummary">
+        <span id = "os_start">
+          <img src = "./images/icon-music.svg" height = "35px" alt = "Grey musical note symbol.">
+          </span>
+          
+        <span id = "os_center">
+          <ul class = "plan_sum" style = "list-style :none;line-height: 1.2rem;">
+            <li style = "font-weight: 900">Annual Plan</li>
+            <li style = "color:hsl(224, 23%, 55%);">$59.99/year</li>
+          </ul>
+          </span>
+        
+        <span id = "os_end">
+          <p id = "os_end" style="font-size:0.7rem;"><b><u>Change</u></b></p>
+          </span>
+    </div>
+    <button class = "proceed">Proceed to Payment</button>
+    <button class = "cancel">Cancel Order</button>
+
+    </div>
+  </main>
+  
+  <footer>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+</body>
+</html>
