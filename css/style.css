@@ -18,6 +18,9 @@
     box-sizing: border-box;
 }
 
+
+/* Content */
+
 body {
     background-image: var(--mobilebg);
     background-color: var(--paleblue);
@@ -47,16 +50,22 @@ footer {
 }
 
 
-/* Content */
+/* Card */
 
 .container {
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
+    padding: 35px;
     background-color: white;
     border-radius: 15px;
     width: 380px;
     contain: content;
     box-shadow: 2px 10px 30px rgba(0, 0, 0, 0.1);
+    
+}
+
+.hero {
+    margin: -35px;
 }
 
 b {
@@ -69,17 +78,15 @@ h1, p {
 
 p {
     color: var(--greyblue);
-    padding-right: 35px;
-    padding-left: 35px;
-    padding-top: 10px;
-    line-height: 1.5rem;
+    margin-top: 10px;
+    line-height: 24px;
     padding-bottom: 10px;
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 900;
-    margin-top: 35px;
+    margin-top: 70px;
     color: var(--darkblue);
 }
 
@@ -88,26 +95,31 @@ h1 {
     align-items: center;
     background-color: var(--paleblue);
     border-radius: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 5px;
-}
-
-#os_start {
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    padding-top: 20px;
+    margin-top: 10px;
+    width: 320px;
     height: 100%;
 }
 
-#os_end {
+.os_start {
+    justify-content: start;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    height: 100%;
+}
+
+.plan_sum {
+    text-indent: -30px;
+}
+
+.change, .os_end {
     position: relative;
-    left: 30px;
+    left: 5px;
     color: var(--brightblue);
 }
 
-#os_end:hover {
+.os_end:hover, .change:hover {
     color: var(--greyblue);
     cursor: pointer;
 }
@@ -117,15 +129,14 @@ button {
     font-weight: 900;
     padding: 13px;
     border: 0;
+    width: 320px;
 }
 
 .proceed {
     background-color: var(--brightblue);
     color: white;
     border-radius: 8px;
-    margin-right: 30px;
     margin-top: 25px;
-    margin-left: 30px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -136,7 +147,7 @@ button {
 
 .cancel {
     color: var(--greyblue);
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     padding-top: 25px;
     background-color: rgba(240, 248, 255, 0);
 }
