@@ -25,7 +25,7 @@ body {
     background-image: var(--mobilebg);
     background-color: var(--paleblue);
     background-position: center start;
-    background-size: contain;
+    background-size: 100% 500px;
     background-repeat: no-repeat;
     font-family: 'Red Hat Display', sans-serif;
     min-height: 100vh;
@@ -40,7 +40,7 @@ body {
     background-image: var(--desktopbg);
     background-color: var(--paleblue);
     background-position: center start;
-    background-size: contain;
+    background-size: 100% 500px;
     background-repeat: no-repeat;
 }
 
