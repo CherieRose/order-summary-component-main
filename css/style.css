@@ -93,10 +93,10 @@ h1 {
 .ordersummary {
     display: flex;
     align-items: center;
-    background-color: var(--paleblue);
+    background-color: var(--verypaleblue);
     border-radius: 10px;
     margin-top: 10px;
-    width: 320px;
+    width: 300px;
     height: 100%;
 }
 
@@ -130,7 +130,7 @@ button {
     font-weight: 900;
     padding: 13px;
     border: 0;
-    width: 320px;
+    width: 300px;
 }
 
 .proceed {
