@@ -1,18 +1,32 @@
+/* Custom Variables */
+
+:root {
+    --mobilebg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='375' height='194'%3E%3Cpath fill='%23D6E1FF' fill-rule='evenodd' d='M-131.808 155.366c97.026 51.512 204.233 51.512 321.62 0 117.388-51.512 223.27-51.512 317.648 0V0h-639.268v155.366z'/%3E%3C/svg%3E");
+    --desktopbg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='437'%3E%3Cpath fill='%23D6E1FF' fill-rule='evenodd' d='M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z'/%3E%3C/svg%3E");
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
+    --xtrapaleblue: hsl(225, 100%, 98%);
+    --greyblue: hsl(224, 23%, 55%);
+    --darkblue: hsl(223, 47%, 23%);
+}
+
+
+/* CSS Reset */
 * { 
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     box-sizing: border-box;
-
 }
 
 body {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='375' height='194'%3E%3Cpath fill='%23D6E1FF' fill-rule='evenodd' d='M-131.808 155.366c97.026 51.512 204.233 51.512 321.62 0 117.388-51.512 223.27-51.512 317.648 0V0h-639.268v155.366z'/%3E%3C/svg%3E");
-    background-color: hsl(225, 100%, 94%);
+    background-image: var(--mobilebg);
+    background-color: var(--paleblue);
     background-position: center start;
     background-size: contain;
     background-repeat: no-repeat;
     font-family: 'Red Hat Display', sans-serif;
     min-height: 100vh;
+    max-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -20,21 +34,27 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='437'%3E%3Cpath fill='%23D6E1FF' fill-rule='evenodd' d='M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z'/%3E%3C/svg%3E");
+    background-image: var(--desktopbg);
+    background-color: var(--paleblue);
+    background-position: center start;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 footer {
     position: fixed;
-    bottom: 0px;
-    
+    bottom: 0px; 
 }
+
+
+/* Content */
 
 .container {
     display: flex;
     flex-direction: column;;
     background-color: white;
     border-radius: 15px;
-    width: 330px;
+    width: 380px;
     contain: content;
     box-shadow: 2px 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -48,26 +68,25 @@ h1, p {
 }
 
 p {
-    font-size: 0.75em;
-    color: hsl(224, 23%, 55%);
-    padding-right: 30px;
-    padding-left: 30px;
+    color: var(--greyblue);
+    padding-right: 35px;
+    padding-left: 35px;
     padding-top: 10px;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
     padding-bottom: 10px;
 }
 
 h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 900;
     margin-top: 35px;
-    color: hsl(223, 47%, 23%);
+    color: var(--darkblue);
 }
 
 .ordersummary {
     display: flex;
     align-items: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color: var(--paleblue);
     border-radius: 10px;
     margin-left: 30px;
     margin-right: 30px;
@@ -82,31 +101,26 @@ h1 {
     height: 100%;
 }
 
-ul {
-    font-size: 0.75rem;
-}
-
 #os_end {
     position: relative;
-    left: 20px;
-    color:hsl(245, 75%, 52%);
+    left: 30px;
+    color: var(--brightblue);
 }
 
 #os_end:hover {
-    color: hsl(224, 23%, 55%);
+    color: var(--greyblue);
     cursor: pointer;
 }
 
 button {
-    font-size: 0.7rem;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 900;
-    padding: 12px;
+    padding: 13px;
     border: 0;
 }
 
 .proceed {
-    background-color:hsl(245, 75%, 52%);
+    background-color: var(--brightblue);
     color: white;
     border-radius: 8px;
     margin-right: 30px;
@@ -116,14 +130,14 @@ button {
 }
 
 .proceed:hover {
-    background-color: hsl(224, 23%, 55%);
+    background-color: var(--greyblue);
     cursor: pointer;
 }
 
 .cancel {
-    color:hsl(224, 23%, 55%);
-    padding-bottom:35px;
-    padding-top:25px;
+    color: var(--greyblue);
+    padding-bottom: 40px;
+    padding-top: 25px;
     background-color: rgba(240, 248, 255, 0);
 }
 
